@@ -14,14 +14,16 @@ Summary: The Terraform Azure provider
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/terraform-provider-azurerm-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/terraform-provider-azurerm-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/terraform-provider-azurerm-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/terraform-provider-azurerm-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/terraform-provider-azurerm-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/terraform-provider-azurerm-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/terraform-provider-azurerm-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/terraform-provider-azurerm-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/terraform-provider-azurerm-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/terraform-provider-azurerm-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/terraform-provider-azurerm-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/terraform-provider-azurerm-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/terraform-provider-azurerm/badges/version.svg)](https://anaconda.org/conda-forge/terraform-provider-azurerm)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/terraform-provider-azurerm/badges/downloads.svg)](https://anaconda.org/conda-forge/terraform-provider-azurerm)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-terraform--provider--azurerm-green.svg)](https://anaconda.org/conda-forge/terraform-provider-azurerm) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/terraform-provider-azurerm.svg)](https://anaconda.org/conda-forge/terraform-provider-azurerm) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/terraform-provider-azurerm.svg)](https://anaconda.org/conda-forge/terraform-provider-azurerm) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/terraform-provider-azurerm.svg)](https://anaconda.org/conda-forge/terraform-provider-azurerm) |
 
 Installing terraform-provider-azurerm
 =====================================
