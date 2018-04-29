@@ -1,4 +1,4 @@
-{% set provider= "azurerm" %}
+{% set provider = "azurerm" %}
 {% set version = "1.4.0" %}
 
 {% set name = "terraform-provider-" + provider %}
