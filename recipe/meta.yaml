@@ -1,10 +1,10 @@
 {% set provider = "azurerm" %}
-{% set version = "1.4.0" %}
+{% set version = "1.5.0" %}
 
 {% set name = "terraform-provider-" + provider %}
 {% set x4_plugin = name + '_v' + version + "_x4" %}
 
-{% set sha256 = "835624af9f782caeb8d631a6908821c6ad76c33fc2c853560be5b999a1c270aa" %}
+{% set sha256 = "17af72036da431ac29a076688c84273ceb76fd52885091fa95670ec237f91b02" %}
 {% set sha256_win64 = "cf6cfe17247ed4b19279c08429753d260403e306f6f7b14d35907559dc3a5784" %}
 
 package:
