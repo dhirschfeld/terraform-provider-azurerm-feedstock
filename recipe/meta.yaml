@@ -1,5 +1,5 @@
 {% set provider = "azurerm" %}
-{% set version = "1.11.0" %}
+{% set version = "1.13.0" %}
 
 {% set name = "terraform-provider-" + provider %}
 {% set x4_plugin = name + '_v' + version + "_x4" %}
@@ -11,11 +11,11 @@ package:
 source:
   url: https://github.com/terraform-providers/{{ name }}/archive/v{{ version }}.tar.gz  # [not win]
   fn: {{ name }}-{{ version }}.tar.gz  # [not win]
-  sha256: 25b9a4c810f5e7bf983f82dcfe2082d4ec557a3916349e056dccaea15f3b952d  # [not win]
+  sha256: c26d9f0a04f8b5d2f6c8fe36beb9f0c4e30d6ee349802ab3da4d808d49d9c36e  # [not win]
 
   url: https://releases.hashicorp.com/{{ name }}/{{ version }}/{{ name }}_{{ version }}_windows_amd64.zip  # [win64]
   fn: {{ name }}-{{ version }}.zip  # [win]
-  sha256: bdd0074fec63ed7ee387855b60ff33b5c2d523ae8ecdef1fcf002515c56b97c1  # [win64]
+  sha256: 3bf71103507ee08b03620c148ecdf2c08ef59e8cb741f9575eae9181335a5cd1  # [win64]
 
 build:
   number: 0
