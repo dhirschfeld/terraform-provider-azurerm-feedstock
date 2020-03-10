@@ -1,6 +1,6 @@
 {% set provider = "azurerm" %}
 {% set goname = "github.com/terraform-providers/terraform-provider-"+provider.lower() %}
-{% set version = "1.35.0" %}
+{% set version = "1.44.0" %}
 
 {% set name = goname.split('/')[-1] %}
 {% set pkg_src = ('src/'+goname).replace("/",os.sep) %}
@@ -14,7 +14,7 @@ package:
 source:
   - folder:  {{ pkg_src }}
     url: https://{{ goname }}/archive/v{{ version }}.tar.gz
-    sha256: 5025704f54986ea926bb13325685fb28192872fba29994928592afc98bc608a3
+    sha256: 1f9fcccae44906672387a40913c5420396e806edeb79e6393f26e19a694c9ef5
 
 build:
   number: 0
@@ -52,3 +52,4 @@ about:
 extra:
   recipe-maintainers:
     - sodre
+    - dhirschfeld
