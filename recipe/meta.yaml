@@ -1,6 +1,6 @@
 {% set provider = "azurerm" %}
 {% set goname = "github.com/terraform-providers/terraform-provider-"+provider.lower() %}
-{% set version = "2.1.0" %}
+{% set version = "2.2.0" %}
 
 {% set name = goname.split('/')[-1] %}
 {% set pkg_src = ('src/'+goname).replace("/",os.sep) %}
@@ -14,7 +14,7 @@ package:
 source:
   - folder:  {{ pkg_src }}
     url: https://{{ goname }}/archive/v{{ version }}.tar.gz
-    sha256: edb73f0b37d8a37aa8b25ad4ee3fa7c7963ec86fa0e0b678f0f4a1124008d01d
+    sha256: edbe9bbec18e0e85009988bb2048ae0a77068987ae3a05e6377de5296753fa9b
 
 build:
   number: 0
@@ -43,7 +43,7 @@ test:
 
 about:
   home: https://www.terraform.io
-  license: MPL 2.0
+  license: MPL-2.0
   summary: The Terraform Azure provider
   doc_url: https://www.terraform.io/docs/providers/{{ provider }}/index.html
   dev_url: https://github.com/terraform-providers/{{ name }}
