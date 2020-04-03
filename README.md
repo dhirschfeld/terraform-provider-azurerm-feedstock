@@ -3,7 +3,7 @@ About terraform-provider-azurerm
 
 Home: https://www.terraform.io
 
-Package license: MPL 2.0
+Package license: MPL-2.0
 
 Feedstock license: BSD 3-Clause
 
@@ -155,6 +155,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@conda-forge/terraform](https://github.com/conda-forge/terraform/)
 * [@dhirschfeld](https://github.com/dhirschfeld/)
-* [@sodre](https://github.com/sodre/)
 
