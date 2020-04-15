@@ -20,6 +20,10 @@ build:
   number: 0
   script:
     - pushd {{ pkg_src }}
+    - GOBIN=$(go env GOBIN)  # [not win]
+    - echo "##############################################################"
+    - echo $GOBIN  # [not win]
+    - echo "##############################################################"
     - go build -v -o $GOBIN/{{ x4_plugin }} .  # [unix]
     - go build -v -o %GOBIN%\{{ x4_plugin }} .  # [win]
 
