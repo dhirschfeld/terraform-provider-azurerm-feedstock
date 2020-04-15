@@ -20,6 +20,7 @@ build:
   number: 0
   script:
     - pushd {{ pkg_src }}
+    - conda install -n base conda=4.7.6 --yes
     - GOBIN=$(go env GOBIN)  # [not win]
     - echo "##############################################################"
     - echo $GOBIN  # [not win]
