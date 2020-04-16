@@ -17,11 +17,14 @@ source:
     sha256: 01e6f883f6b93099803d7641da3f2aa752b2280c8b28165bfa4280215d21f518
 
 build:
-  number: 0
+  number: 1
   script:
     - pushd {{ pkg_src }}
-    - GOBIN=$(go env GOBIN)  # [not win]
-    - go build -v -o $GOBIN/{{ x4_plugin }} .  # [unix]
+    - GOBIN=$(go env GOBIN)                     # [not win]
+    - go build -v -o $GOBIN/{{ x4_plugin }} .   # [not win]
+    - go env GOBIN > gobin                      # [win]
+    - set /p GOBIN= < gobin                     # [win]
+    - del gobin                                 # [win]
     - go build -v -o %GOBIN%\{{ x4_plugin }} .  # [win]
 
 requirements:
