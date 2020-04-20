@@ -18,12 +18,7 @@ build:
   skip: True  # [osx]
   number: 0
   script:
-    - GOBIN=$(go env GOBIN)                     # [not win]
-    - go build -v -o {{ target_gobin }}{{ x4_plugin }}{{ target_goexe }} .   # [not win]
-    - go env GOBIN > gobin                      # [win]
-    - set /p GOBIN= < gobin                     # [win]
-    - del gobin                                 # [win]
-    - go build -v -o %GOBIN%\{{ x4_plugin }}{{ target_goexe }} .  # [win]
+    - go build -v -o {{ target_gobin }}{{ x4_plugin }}{{ target_goexe }}
 
 requirements:
   build:
