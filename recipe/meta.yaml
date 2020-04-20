@@ -3,7 +3,6 @@
 {% set version = "2.6.0" %}
 
 {% set name = goname.split('/')[-1] %}
-{% set pkg_src = ('src/'+goname).replace("/",os.sep) %}
 
 {% set x4_plugin = name + '_v' + version + "_x4" + (".exe" if win else "")%}
 
@@ -12,15 +11,13 @@ package:
   version: {{ version }}
 
 source:
-  - folder: {{ pkg_src }}
-    url: https://{{ goname }}/archive/v{{ version }}.tar.gz
-    sha256: b062b0b9acdb85f533d1c624b630c478b08826b144f97b8663455ab4c1114160
+  url: https://{{ goname }}/archive/v{{ version }}.tar.gz
+  sha256: b062b0b9acdb85f533d1c624b630c478b08826b144f97b8663455ab4c1114160
 
 build:
   skip: True  # [osx]
   number: 0
   script:
-    - pushd {{ pkg_src }}
     - GOBIN=$(go env GOBIN)                     # [not win]
     - go build -v -o $GOBIN/{{ x4_plugin }} .   # [not win]
     - go env GOBIN > gobin                      # [win]
@@ -50,7 +47,6 @@ about:
   home: https://www.terraform.io
   license: MPL-2.0
   license_family: MOZILLA
-  license_file: {{ pkg_src }}/LICENSE
   summary: The Terraform Azure provider
   doc_url: https://www.terraform.io/docs/providers/{{ provider }}/index.html
   dev_url: https://github.com/terraform-providers/{{ name }}
