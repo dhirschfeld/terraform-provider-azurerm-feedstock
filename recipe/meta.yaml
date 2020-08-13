@@ -15,7 +15,7 @@ source:
   sha256: cbb8e97305c195f48b3a26917c455ad0e5efcf79a36ef10fd67eee7c161f4474
 
 build:
-  number: 0
+  number: 1
   script:
     - go build -v -o {{ target_gobin }}{{ x4_plugin }}{{ target_goexe }}
 
@@ -23,7 +23,7 @@ requirements:
   build:
     - {{ compiler('go') }} 1.13
   run:
-    - terraform 0.12
+    - terraform =0.12.*|0.13.*
 
 test:
   commands:
